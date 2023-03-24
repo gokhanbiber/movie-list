@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+}
+
+.search__bar {
+  margin: auto;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: 1em;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 5px rgb(58, 97, 98);
+  transition: 50ms all;
+}
+
+.search__submit {
+  margin: 0.25rem auto;
+  font-size: 1.5rem;
+  min-width: 120px;
+  text-align: center;
+  display: block;
+  height: 2rem;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 50ms all;
+}
+
+
+.search__bar:active, .search__bar:focus, .search__submit:active{
+  border-color: rgb(136, 225, 228);
+  box-shadow: 0 0 20px rgb(58, 97, 98);
+}
+
+.movie-list {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.movie-card {
+  display: flex;
+  width: 320px;
+  height: 460px;
+  padding: 10px 10px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.movie-card:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.not-found{
+  text-align: center;
+}
+
+.not-found::before {
+  content: "🙄";
+  margin-right: 0.35em;
+}
+
+.movie-page-nav {
+  top: 0;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bolder;
+}
+
+.movie-page-detail {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-page-detail-description{
+  margin: auto 1rem;
+  text-align: start;
+}
+
+.btn-back {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
